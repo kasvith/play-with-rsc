@@ -1,4 +1,5 @@
 import { Counter } from "./Counter";
+import { PostPage } from "./components/Post";
 
 export function App() {
   return (
@@ -11,7 +12,7 @@ export function App() {
       </head>
       <body>
         <div id="app">
-          <Counter />
+          <PostPage />
         </div>
       </body>
     </html>
