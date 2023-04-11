@@ -1,5 +1,6 @@
 import { Counter } from "./Counter";
 import { PostPage } from "./components/Post";
+import "./App.css";
 
 export function App() {
   return (
@@ -12,7 +13,9 @@ export function App() {
       </head>
       <body>
         <div id="app">
-          <PostPage />
+          <div className="App">
+            <PostPage />
+          </div>
         </div>
       </body>
     </html>
