@@ -12,10 +12,8 @@ export function App() {
         <title>My app</title>
       </head>
       <body>
-        <div id="app">
-          <div className="App">
-            <PostPage />
-          </div>
+        <div id="app" className="app">
+          <PostPage />
         </div>
       </body>
     </html>
