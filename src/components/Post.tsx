@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { fetchData } from "../fetchData";
+import "./Post.css";
 
 interface Post {
   userId: number;
@@ -11,7 +12,7 @@ interface Post {
 export function Post() {
   const post = use(fetchData("https://jsonplaceholder.typicode.com/posts/1"));
   return (
-    <div>
+    <div className="post">
       <h1>Post</h1>
       <p>{post.userId}</p>
       <p>{post.title}</p>

@@ -21,8 +21,10 @@ async function createServer() {
 
     try {
       const { render } = await vite.ssrLoadModule("/src/entry-server.tsx");
+      
+      console.log([...vite.__assets__])
 
-      return render(url, res);
+      return render(url, res, { assets: [...vite.__assets__] });
     } catch (e) {
       // If an error is caught, let Vite fix the stack trace so it maps back
       // to your actual source code.
